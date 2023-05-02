@@ -136,4 +136,27 @@ section {
 }
 .navbar .nav-btn.active :nth-child(3) {
   transform: translateY(2px) rotate(-45deg);
+}
+
+#Home .info h4 {
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+#Home .info h1, #Home .info h4 {
+  margin-bottom: 0.5rem;
+}
+#Home .info h1, #Home .info h4, #Home .info button {
+  animation: text_animation 2s ease forwards;
+  transform: translate(-100%);
+  opacity: 0;
+}
+#Home .info button {
+  margin-top: 0.5rem;
+}
+
+@keyframes text_animation {
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=main.css.map */

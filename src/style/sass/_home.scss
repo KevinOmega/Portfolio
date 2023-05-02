@@ -1,0 +1,28 @@
+#Home{
+    .info{
+        h4{
+            font-weight: lighter;
+            font-size: 1.5rem;
+            
+        }
+        h1,h4{
+            margin-bottom: 0.5rem;
+        }
+
+        h1,h4,button{
+            animation: text_animation 2s ease forwards;
+            transform: translate(-100%);
+            opacity: 0;
+        }
+        button{
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+@keyframes text_animation {
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
