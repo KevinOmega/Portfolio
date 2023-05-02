@@ -1,6 +1,7 @@
-$navbar-height : 4rem;
 
 .navbar{
+    position: fixed;
+    width: 100vw;
     background-color: $dark-blue;
     display: flex;
     justify-content: space-between;

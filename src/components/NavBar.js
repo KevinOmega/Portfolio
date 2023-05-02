@@ -19,12 +19,12 @@ const NavBar = () => {
       <div className={`links ${active && "active"}`}>
         <ul>
           <li>
-            <a href="Home" onClick={() => setActive(false)}>
+            <a href="#Home" onClick={() => setActive(false)}>
               Home
             </a>
           </li>
           <li>
-            <a href="Skills" onClick={() => setActive(false)}>
+            <a href="#Skills" onClick={() => setActive(false)}>
               Skills
             </a>
           </li>
