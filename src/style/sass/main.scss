@@ -24,6 +24,7 @@ $navbar-height : 4rem;
 
 body{
     font-size: 10px;
+    user-select: none;
 }
 
 h1{
@@ -55,3 +56,4 @@ p,a,button{
 @import "./navbar";
 @import "./home";
 @import "./skills";
+@import "./projects";

@@ -29,22 +29,22 @@ const NavBar = () => {
             </a>
           </li>
           <li>
-            <a href="Projects" onClick={() => setActive(false)}>
+            <a href="#Projects" onClick={() => setActive(false)}>
               Projects
             </a>
           </li>
           <li>
-            <a href="Certification" onClick={() => setActive(false)}>
+            <a href="#Certification" onClick={() => setActive(false)}>
               Certification
             </a>
           </li>
           <li>
-            <a href="About" onClick={() => setActive(false)}>
+            <a href="#About" onClick={() => setActive(false)}>
               About Me
             </a>
           </li>
           <li>
-            <a href="Contact" onClick={() => setActive(false)}>
+            <a href="#Contact" onClick={() => setActive(false)}>
               Contact Me
             </a>
           </li>
