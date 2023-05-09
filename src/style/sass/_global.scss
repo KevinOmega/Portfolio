@@ -6,7 +6,7 @@
 }
 
 section{
-    padding: $navbar-height 2rem;
+    padding: $navbar-height min(7rem, 10vw);
     min-height: 100vh;
 }   
 

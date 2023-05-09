@@ -23,4 +23,12 @@ export const projects = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quas aut quia sapiente repellat repellendus, iusto deleniti laudantium earum aliquam!",
     image: "/images/trello.png",
   },
+  {
+    id: 4,
+    title: "EF SET Replication",
+    url: "https://random-page-project.netlify.app/",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan, tortor et aliquam venenatis, lorem neque mollis justo, non maximus diam dui interdum elit. Proin feugiat sagittis blandit. Phasellus turpis felis, sodales sit amet vehicula sed, varius sed dui. Sed non lectus quis tellus bibendum gravida. Vestibulum id ex vitae orci dapibus faucibus.",
+    image: "/images/efset.png",
+  },
 ];

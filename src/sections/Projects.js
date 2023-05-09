@@ -24,13 +24,18 @@ const Projects = () => {
     let newPosition = Number(
       carouselRef.current.style.transform.match(/-?\d+/)
     );
-    console.log(carouselWidth - containerWidth, newPosition);
 
     if (newPosition > 0) {
       newPosition = 0;
     } else {
-      console.log("si");
-      newPosition = carouselWidth - containerWidth;
+      const itemWidth = carouselWidth / projects.length;
+      if (containerWidth + newPosition * -1 > carouselWidth) {
+        const itemsIn = (containerWidth / itemWidth).toFixed(0);
+        newPosition = (carouselWidth - itemWidth * itemsIn) * -1;
+      } else {
+        const n = Math.floor((-newPosition + itemWidth / 2) / itemWidth);
+        newPosition = -itemWidth * n;
+      }
     }
 
     setPosition(newPosition);
@@ -61,7 +66,7 @@ const Projects = () => {
           onPointerMove={pointerMove}
         >
           {projects.map((item) => {
-            return <Project {...item} />;
+            return <Project {...item} key={item.id} />;
           })}
         </div>
       </div>

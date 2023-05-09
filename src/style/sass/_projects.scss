@@ -4,26 +4,26 @@
     position: relative;
     width: 100%;
     overflow-x: hidden;
-    // border: 2px solid white;
     display: flex;
     align-items: center;
     margin-top: 5.6rem;
     
     .projects-carousel{
-        top: 0;
-        left: 0;
-        display: flex;
+        position: relative;
         width: fit-content;
+        display: flex;
+        align-items: center;
         gap: 2rem;
         touch-action: pan-y;
 
         .card{
-            width: 16rem;
-            padding: 1rem;
+            position: relative;
+            width: max(17rem,20vw);
+            height: 100%;
+            padding: 1.6rem;
             background-color: #fff1;
             background-image: radial-gradient(#fff4,#7771);
             border-radius: 20px;
-            height: fit-content;
 
             .card-image{
                 width: 100%;
@@ -43,7 +43,7 @@
                 }
                 p{
                     font-size: 0.85rem;
-                    margin-bottom: 1.2rem;
+                    margin-bottom: 1.5rem;
                 }
                 a{
                     font-size: 0.8rem;

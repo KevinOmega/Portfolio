@@ -23,8 +23,10 @@ $navbar-height : 4rem;
 }
 
 body{
+    width: 100vw;
     font-size: 10px;
     user-select: none;
+    overflow-x: hidden;
 }
 
 h1{

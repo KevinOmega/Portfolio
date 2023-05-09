@@ -9,7 +9,7 @@ const Project = ({ id, title, description, image, url }) => {
       ></div>
       <div className="card-description">
         <h4>{title}</h4>
-        <p>{description}</p>
+        <p>{description.substring(0,150)}</p>
         <a href={url} className="primary-button">
           See the Project
         </a>
