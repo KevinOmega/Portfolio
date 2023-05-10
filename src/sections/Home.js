@@ -1,4 +1,5 @@
 import React from "react";
+import Square from "../components/Square";
 
 const Home = () => {
   return (
@@ -9,7 +10,9 @@ const Home = () => {
         <h4>NEXT js Developer</h4>
         <button className="primary-button">About me</button>
       </div>
-      <div className="graph"></div>
+      <div className="graph">
+        <Square />
+      </div>
     </section>
   );
 };

@@ -160,11 +160,134 @@ section {
 #Home .info button {
   margin-top: 0.5rem;
 }
+#Home .graph {
+  perspective: 10rem;
+  perspective-origin: 50% calc(50% - 200px);
+}
+#Home .graph .square {
+  display: flex;
+  flex-direction: column;
+  animation: s 4s linear infinite alternate-reverse;
+  transform-style: preserve-3d;
+}
+#Home .graph .square .items {
+  display: flex;
+  transform-style: preserve-3d;
+}
+#Home .graph .square .items span {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  animation: squares 4s linear infinite;
+  transform: scale(0.2);
+  border-radius: 50%;
+  margin: 0.2rem;
+}
 
 @keyframes text_animation {
   to {
     transform: translate(0);
     opacity: 1;
+  }
+}
+@keyframes squares {
+  0% {
+    transform: scale(0.2);
+    border-radius: 50%;
+    margin: 0.2rem;
+    opacity: 0.3;
+  }
+  4% {
+    transform: scale(0.2);
+    border-radius: 50%;
+    margin: 0.2rem;
+    opacity: 1;
+  }
+  8% {
+    transform: scale(0.2);
+    border-radius: 50%;
+    margin: 0.2rem;
+    opacity: 1;
+  }
+  16% {
+    border-radius: 0;
+    transform: scale(1);
+    margin: 0.2rem;
+    opacity: 1;
+  }
+  24% {
+    border-radius: 0;
+    transform: scale(1);
+    margin: 0.2rem;
+    opacity: 1;
+  }
+  32% {
+    transform: scale(1) rotate(180deg);
+    border-radius: 0;
+    margin: 0.2rem;
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1) rotate(180deg);
+    border-radius: 0;
+    margin: 0.2rem;
+    opacity: 1;
+  }
+  48% {
+    transform: scale(1) rotate(365deg);
+    border-radius: 0;
+    margin: 0.4rem;
+    opacity: 1;
+  }
+  56% {
+    transform: scale(1) rotate(365deg);
+    border-radius: 50%;
+    margin: 0.4rem;
+    opacity: 1;
+  }
+  64% {
+    transform: scale(1) rotate(365deg);
+    border-radius: 50%;
+    margin: 0.4rem;
+    opacity: 1;
+  }
+  72% {
+    transform: scale(1) rotate(365deg) translateZ(var(--i));
+    border-radius: 50%;
+    margin: 0.4rem;
+    opacity: 1;
+  }
+  76% {
+    transform: scale(1) rotate(365deg) translateZ(var(--i));
+    border-radius: 50%;
+    margin: 0.4rem;
+    opacity: 1;
+  }
+  82% {
+    transform: scale(1) rotate(365deg) translateZ(calc(var(--i) * -1));
+    border-radius: 50%;
+    margin: 0.4rem;
+    opacity: 1;
+  }
+  88% {
+    transform: scale(1) rotate(365deg) translateZ(calc(var(--i) * -1));
+    border-radius: 50%;
+    margin: 0.4rem;
+    opacity: 1;
+  }
+  96% {
+    transform: scale(0.2) rotate(365deg) translateZ(0);
+    border-radius: 50%;
+    margin: 0.2rem;
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(0.2) rotate(365deg) translateZ(0);
+    border-radius: 50%;
+    margin: 0.2rem;
+    opacity: 0.3;
   }
 }
 #Skills .title {
