@@ -34,8 +34,8 @@ const NavBar = () => {
             </a>
           </li>
           <li>
-            <a href="#Certification" onClick={() => setActive(false)}>
-              Certification
+            <a href="#Certificates" onClick={() => setActive(false)}>
+              Certificates
             </a>
           </li>
           <li>

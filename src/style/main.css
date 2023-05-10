@@ -304,6 +304,9 @@ section {
   background-size: cover;
   border-radius: 20px;
 }
+#Projects .projects-center .projects-carousel .card .card-description {
+  color: white;
+}
 #Projects .projects-center .projects-carousel .card .card-description h4 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
@@ -314,4 +317,42 @@ section {
 }
 #Projects .projects-center .projects-carousel .card .card-description a {
   font-size: 0.8rem;
+}
+
+#Certificates {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#Certificates .certificates-center .row {
+  gap: 2.5rem 0;
+}
+#Certificates .certificates-center .row .card {
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#Certificates .certificates-center .row .card .card-image {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.2rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#Certificates .certificates-center .row .card .card-info h4 {
+  font-size: 0.7rem;
+  margin: 0;
+}
+#Certificates .certificates-center .row .card .card-info p {
+  font-size: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+#Certificates .certificates-center .row .card .card-info a {
+  display: inline-block;
+  font-size: 0.6rem;
+  padding: 0.4rem 0.7rem;
 }/*# sourceMappingURL=main.css.map */

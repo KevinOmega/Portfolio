@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { projects } from "../api/projects";
-import Project from "./Project";
+import Project from "../components/Project";
 
 const Projects = () => {
   const [move, setMove] = useState(false);

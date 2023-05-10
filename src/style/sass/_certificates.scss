@@ -1,0 +1,45 @@
+#Certificates{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .certificates-center{
+        .row{
+            gap: 2.5rem 0;
+            .card {
+                    border: none;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+            
+                    .card-image {
+                        position: relative;
+                        width: 3rem;
+                        height: 3rem;
+                        margin-bottom: 0.2rem;
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+            
+                    .card-info {
+                        h4 {
+                            font-size: 0.7rem;
+                            margin: 0;
+                        }
+            
+                        p {
+                            font-size: 0.7rem;
+                            margin-bottom: 0.2rem;
+                        }
+            
+                        a {
+                            display: inline-block;
+                            font-size: 0.6rem;
+                            padding: 0.4rem 0.7rem;
+                        }
+                    }
+                }
+        }
+    }
+}
