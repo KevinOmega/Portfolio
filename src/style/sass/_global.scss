@@ -38,3 +38,8 @@ section{
 }
 
 
+@media screen and (min-width : $medium-screen) {
+    .default-section{
+        flex-direction : row;
+    }
+}

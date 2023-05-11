@@ -75,6 +75,11 @@ section {
   transform: scale(0.9);
 }
 
+@media screen and (min-width: 768px) {
+  .default-section {
+    flex-direction: row;
+  }
+}
 .navbar {
   position: fixed;
   width: 100vw;
