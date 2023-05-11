@@ -542,4 +542,15 @@ section {
 #Contact .form .form-center .form-item input, #Contact .form .form-center .form-item textarea {
   font-size: 0.9rem;
   font-weight: 300;
+}
+@media screen and (min-width: 768px) {
+  #Contact .contact-center {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #Contact .contact-center .form {
+    width: 40%;
+    margin-right: 5vw;
+  }
 }/*# sourceMappingURL=main.css.map */

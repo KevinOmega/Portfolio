@@ -64,4 +64,16 @@
             }
         }
     }
+
+    @media screen and (min-width : $medium-screen) {
+        .contact-center{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .form{
+                width: 40%;
+                margin-right: 5vw;
+            }
+        }
+    }
 }
