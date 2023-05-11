@@ -89,7 +89,7 @@ section {
   align-items: center;
   color: #fff;
   height: 4rem;
-  padding: 0 2.5rem;
+  padding: 0 max(3rem, 15vw);
   z-index: 10;
 }
 .navbar .links {
@@ -99,7 +99,7 @@ section {
   top: 4rem;
   background-image: radial-gradient(#0063BE, #001933);
   color: white;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
   z-index: 1;
 }
 .navbar .links ul {
@@ -109,6 +109,7 @@ section {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0;
 }
 .navbar .links ul li {
   list-style: none;
@@ -117,7 +118,7 @@ section {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .navbar .links ul li a:hover {
   opacity: 1;
@@ -138,7 +139,7 @@ section {
   border-radius: 15px;
   background-color: #fff;
   transform-origin: 0 50%;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 .navbar .nav-btn.active :nth-child(1) {
   transform: rotate(45deg);
@@ -150,6 +151,32 @@ section {
   transform: translateY(2px) rotate(-45deg);
 }
 
+@media screen and (min-width: 992px) {
+  .navbar {
+    justify-content: space-around;
+    height: 4.5rem;
+    padding: 0;
+  }
+  .navbar .links {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: fit-content;
+    background-image: none;
+    transition: 0s;
+  }
+  .navbar .links ul {
+    flex-direction: row;
+    height: auto;
+    gap: 3rem;
+    align-items: center;
+  }
+  .navbar .nav-btn {
+    position: absolute;
+    transform: translateX(52vw);
+    opacity: 0;
+  }
+}
 #Home .info h4 {
   font-weight: lighter;
   font-size: 1.5rem;
@@ -555,5 +582,8 @@ section {
   #Contact .contact-center .form {
     width: 40%;
     margin-right: 5vw;
+  }
+  #Contact .contact-center .social-media .qr {
+    margin-top: 3rem;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -8,7 +8,7 @@
     align-items: center;
     color: $white;
     height: $navbar-height;
-    padding: 0 2.5rem;
+    padding: 0 max(3rem,15vw);
     z-index: 10;
 
     .links{
@@ -18,7 +18,7 @@
         top: $navbar-height;        
         background-image: $radial-blue;
         color: white;
-        transition: 0.5s linear;
+        transition: 0.3s linear;
         z-index: 1;
         
         ul{
@@ -28,6 +28,7 @@
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
+            margin: 0;
 
             li{
                 list-style: none;
@@ -35,7 +36,7 @@
                     color: white;
                     text-decoration: none;
                     font-size: 1.2rem;
-                    opacity: 0.9;
+                    opacity: 0.8;
                     &:hover{
                         opacity: 1;
                     }
@@ -58,7 +59,7 @@
             border-radius: 15px;
             background-color: $white;
             transform-origin: 0 50%;
-            transition: 0.5s linear;
+            transition: 0.3s linear;
         }
         &.active{
             :nth-child(1){
@@ -73,4 +74,40 @@
         }
     }
 
+}
+
+@media screen and (min-width : $large-screen) {
+
+    $navbar-height : 4.5rem;
+
+    .navbar{
+        justify-content: space-around;
+        height: $navbar-height;
+        padding: 0;
+        .links {
+            position: relative;
+            left: 0;
+            top: 0;
+            width: fit-content;
+            background-image: none;
+            transition: 0s;
+            
+            ul{
+                flex-direction: row;
+                height: auto;
+                gap: 3rem;
+                align-items: center;
+            }
+            
+        }
+        .nav-btn{
+            position: absolute;
+            transform: translateX(52vw);
+            opacity: 0;
+        }    
+    }
+
+    
+
+    
 }
