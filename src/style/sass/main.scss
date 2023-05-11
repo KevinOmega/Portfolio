@@ -49,7 +49,7 @@ h1,h2,h3,h4{
     font-weight: bold;
 }
 
-p,a,button{
+p,a,button,label{
     font-family: $sanchez;
     font-weight: light;
 }
@@ -60,3 +60,4 @@ p,a,button{
 @import "./skills";
 @import "./projects";
 @import "./certificates";
+@import "./contact";

@@ -19,8 +19,7 @@
         }
     }
 
-    $space : 0.5rem;
-    $time : 4s;
+    $time : 5s;
 
     .graph{
         perspective: 10rem;
@@ -28,18 +27,15 @@
         .square{
             display: flex;
             flex-direction: column;
-            // gap: $space;
-            animation: s $time linear infinite alternate-reverse;
             transform-style: preserve-3d;
             .items{
                 display: flex;
                 transform-style: preserve-3d;
-                // gap: $space;
                 span {
                         content: '';
                         display: block;
-                        width: 1rem;
-                        height: 1rem;
+                        width: 0.9rem;
+                        height: 0.9rem;
                         background-color: white;
                         animation: squares $time linear infinite ;
                         transform: scale(0.2);
@@ -58,19 +54,6 @@
         opacity: 1;
     }
 }
-
-// @keyframes s {
-//     0%,20%{
-//         transform: rotate(0);
-//     }
-
-//     40%{
-//         transform: rotate(90deg);
-//     }
-//     100%{
-//         transform: rotate(90deg);
-//     }
-// }
 
 @keyframes squares{
     0%{
