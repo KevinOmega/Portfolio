@@ -511,6 +511,9 @@ section {
   font-size: 1.4rem;
   font-weight: bolder;
 }
+#Contact .contact-center .social-media .social-item a:hover {
+  color: #0063BE;
+}
 #Contact .contact-center .social-media .qr {
   width: 7.4rem;
   height: 7.5rem;

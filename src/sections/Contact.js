@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="social-media">
           {social.map((item) => (
             <div className="social-item" key={item.id}>
-              <a href={item.url}>
+              <a href={item.url} target="_blank">
                 <div className="icon">{item.icon}</div>
                 <h4>{item.name}</h4>
               </a>

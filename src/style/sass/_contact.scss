@@ -25,6 +25,10 @@
                         font-size: 1.4rem;
                         font-weight: bolder;
                     }
+
+                    &:hover{
+                        color: $blue;
+                    }
                 }
             }
             .qr{
