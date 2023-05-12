@@ -1,8 +1,8 @@
 #Certificates{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     .certificates-center{
+        margin-top: 3rem;
         .row{
             gap: 2.5rem 0;
             .card {
@@ -40,6 +40,24 @@
                         }
                     }
                 }
+        }
+    }
+    @media screen and (min-width : $medium-screen) {
+        .certificates-center{
+            margin-top: 15vh;
+            .row{
+                gap: 9rem 0;
+
+                .col{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .card {
+                            width: 50%;
+                        }
+                }
+                
+            }
         }
     }
 }

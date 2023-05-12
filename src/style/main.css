@@ -476,7 +476,9 @@ section {
 #Certificates {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+}
+#Certificates .certificates-center {
+  margin-top: 3rem;
 }
 #Certificates .certificates-center .row {
   gap: 2.5rem 0;
@@ -509,6 +511,22 @@ section {
   display: inline-block;
   font-size: 0.6rem;
   padding: 0.4rem 0.7rem;
+}
+@media screen and (min-width: 768px) {
+  #Certificates .certificates-center {
+    margin-top: 15vh;
+  }
+  #Certificates .certificates-center .row {
+    gap: 9rem 0;
+  }
+  #Certificates .certificates-center .row .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #Certificates .certificates-center .row .col .card {
+    width: 50%;
+  }
 }
 
 #Contact {

@@ -2,7 +2,7 @@ import React from "react";
 
 const Certificate = ({ id, name, brand, image, url }) => {
   return (
-    <div className="col col-6 col-md-4 col-lg-3">
+    <div className="col col-6 col-md-4">
       <div className="card ">
         <div
           className="card-image"

@@ -39,11 +39,6 @@ const NavBar = () => {
             </a>
           </li>
           <li>
-            <a href="#About" onClick={() => setActive(false)}>
-              About Me
-            </a>
-          </li>
-          <li>
             <a href="#Contact" onClick={() => setActive(false)}>
               Contact Me
             </a>

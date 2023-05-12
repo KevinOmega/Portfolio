@@ -8,7 +8,7 @@ const Home = () => {
         <h1>KevinOmega</h1>
         <h4>MERN Full-Stack Developer</h4>
         <h4>NEXT js Developer</h4>
-        <button className="primary-button">About me</button>
+        <button className="primary-button">Hire me</button>
       </div>
       <div className="graph">
         <Square />

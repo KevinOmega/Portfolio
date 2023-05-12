@@ -6,14 +6,19 @@ const generateSquare = (n) => {
     rows.push([]);
     for (let i = 0; i < n; i++) {
       rows[index].push(
-        <span style={{ "--i": (i + index) % 2 ? "1.5rem" : "-1.5rem" }}></span>
+        <span
+          style={{ "--i": (i + index) % 2 ? "1.5rem" : "-1.5rem" }}
+          key={(index + 1) * i}
+        ></span>
       );
     }
   }
   return (
     <>
-      {rows.map((row) => (
-        <div className="items">{row.map((item) => item)}</div>
+      {rows.map((row, index) => (
+        <div className="items" key={index}>
+          {row.map((item) => item)}
+        </div>
       ))}
     </>
   );
