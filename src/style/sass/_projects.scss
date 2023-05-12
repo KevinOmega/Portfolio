@@ -10,6 +10,7 @@
     
     .projects-carousel{
         position: relative;
+        height: auto;
         width: fit-content;
         display: flex;
         align-items: center;
@@ -18,8 +19,8 @@
 
         .card{
             position: relative;
-            width: max(17rem,20vw);
-            height: 100%;
+            width: max(15rem,19.5vw);
+            height: 22rem;
             padding: 1.6rem;
             background-color: #fff1;
             background-image: radial-gradient(#fff4,#7771);

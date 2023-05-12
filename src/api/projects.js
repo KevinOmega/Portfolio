@@ -3,8 +3,7 @@ export const projects = [
     id: 1,
     title: "Cocktail List",
     url: "https://cocktail-list-project.netlify.app/#home",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quas aut quia sapiente repellat repellendus, iusto deleniti laudantium earum aliquam!",
+    description: "This is a Front end App made it with AJAX, Sass and React ",
     image: "/images/cocktail.png",
   },
   {
@@ -12,23 +11,21 @@ export const projects = [
     title: "EcommerceApp",
     url: "https://mern-ecommerceapp.onrender.com/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quas aut quia sapiente repellat repellendus, iusto deleniti laudantium earum aliquam! ",
+      "This is a full stack project made it with React-Redux, Sass, Bootstrap, Express js, Passport and MongoDB",
     image: "/images/mern_ecommerce.png",
   },
   {
     id: 3,
     title: "Trello  Replication",
     url: "https://trello-replication.netlify.app/",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quas aut quia sapiente repellat repellendus, iusto deleniti laudantium earum aliquam!",
+    description: "This is a trello replication made it with Css and React",
     image: "/images/trello.png",
   },
   {
     id: 4,
     title: "EF SET Replication",
     url: "https://random-page-project.netlify.app/",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan, tortor et aliquam venenatis, lorem neque mollis justo, non maximus diam dui interdum elit. Proin feugiat sagittis blandit. Phasellus turpis felis, sodales sit amet vehicula sed, varius sed dui. Sed non lectus quis tellus bibendum gravida. Vestibulum id ex vitae orci dapibus faucibus.",
+    description: "This is an EF Set replicatin made it with Css and React",
     image: "/images/efset.png",
   },
 ];
