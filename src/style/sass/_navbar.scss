@@ -11,6 +11,15 @@
     padding: 0 max(3rem,15vw);
     z-index: 10;
 
+    .logo {
+         h3{
+            margin: 0;
+            font-size: 2rem;
+            font-family: $lobster;
+            font-style: italic;
+         }
+    }
+
     .links{
         position: absolute;
         width: 100%;
