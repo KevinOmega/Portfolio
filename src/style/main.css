@@ -189,7 +189,8 @@ section {
   transform: translate(-100%);
   opacity: 0;
 }
-#Home .info button {
+#Home .info a {
+  display: inline-block;
   margin-top: 0.5rem;
 }
 #Home .graph {

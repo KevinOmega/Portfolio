@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <h3>Logo</h3>
+        <h3>Kevin Huayllas</h3>
       </div>
       <div
         className={`nav-btn ${active && "active"}`}
