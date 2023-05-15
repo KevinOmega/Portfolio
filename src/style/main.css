@@ -89,14 +89,16 @@ section {
   align-items: center;
   color: #fff;
   height: 4rem;
-  padding: 0 max(3rem, 15vw);
+  padding: 0 max(2rem, 10vw);
   z-index: 10;
 }
 .navbar .logo h3 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Lobster", cursive;
   font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
 }
 .navbar .links {
   position: absolute;
@@ -140,11 +142,11 @@ section {
 }
 .navbar .nav-btn span {
   display: block;
-  width: 2.5rem;
-  height: 0.4rem;
+  width: 2rem;
+  height: 0.3rem;
   border-radius: 15px;
   background-color: #fff;
-  transform-origin: 0 50%;
+  transform-origin: 0;
   transition: 0.3s linear;
 }
 .navbar .nav-btn.active :nth-child(1) {
@@ -154,7 +156,7 @@ section {
   opacity: 0;
 }
 .navbar .nav-btn.active :nth-child(3) {
-  transform: translateY(2px) rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 @media screen and (min-width: 992px) {
@@ -162,6 +164,9 @@ section {
     justify-content: space-around;
     height: 4.5rem;
     padding: 0;
+  }
+  .navbar .logo h3 {
+    font-size: 2.3rem;
   }
   .navbar .links {
     position: relative;
