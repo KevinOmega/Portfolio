@@ -21,6 +21,6 @@ export const social = [
     id: 3,
     name: "WhatsApp",
     icon: <AiOutlineWhatsApp />,
-    url: "https://api.whatsapp.com/qr/CZ7PQVRH7QZKC1",
+    url: "https://wa.me/qr/CZ7PQVRH7QZKC1",
   },
 ];
