@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
 import { social } from "../api/social";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "template_gp1v7bb",
+        form.current,
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <footer id="Contact" className="bg-dark">
       <div className="title">
@@ -23,7 +46,7 @@ const Contact = () => {
           ></div>
         </div>
         <div className="form bg-light">
-          <form action="">
+          <form ref={form} onSubmit={sendEmail}>
             <h4>Send me a message</h4>
             <div className="form-center">
               <div className="form-item">
@@ -34,6 +57,7 @@ const Contact = () => {
                   type="text"
                   className="form-control"
                   id="name"
+                  name="user_name"
                   placeholder="KevinOmega"
                 />
               </div>
@@ -46,6 +70,7 @@ const Contact = () => {
                   className="form-control"
                   id="email"
                   placeholder="something@gmail.com"
+                  name="user_email"
                 />
               </div>
               <div className="form-item">
@@ -57,6 +82,7 @@ const Contact = () => {
                   id="name"
                   placeholder="I want a web page for my business"
                   rows="3"
+                  name="message"
                 />
               </div>
               <button className="primary-button" type="submit">
