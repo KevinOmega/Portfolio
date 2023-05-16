@@ -41,6 +41,6 @@
     ]
   },
    "react-dotenv": {
-    "whitelist": ["TEMPLATE_KEY"]
+    "whitelist": ["SERVICE_ID","PUBLIC_KEY","TEMPLATE_ID"]
   }
 }

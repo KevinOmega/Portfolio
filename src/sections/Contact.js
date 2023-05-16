@@ -1,29 +1,46 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { social } from "../api/social";
 import emailjs from "@emailjs/browser";
+import env from "react-dotenv";
 
 const Contact = () => {
   const form = useRef();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [btnDisabled, setBtnDisabled] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "template_gp1v7bb",
-        form.current,
-        "YOUR_PUBLIC_KEY"
-      )
+      .sendForm(env.SERVICE_ID, env.TEMPLATE_ID, form.current, env.PUBLIC_KEY)
       .then(
         (result) => {
+          setEmail("");
+          setName("");
+          setMessage("");
+          setBtnDisabled(true);
           console.log(result.text);
+          setShowMessage(true);
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
+
+  useEffect(() => {
+    if (showMessage) {
+      let timer = window.setTimeout(() => {
+        setShowMessage(false);
+        setBtnDisabled(false);
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [showMessage]);
 
   return (
     <footer id="Contact" className="bg-dark">
@@ -34,7 +51,7 @@ const Contact = () => {
         <div className="social-media">
           {social.map((item) => (
             <div className="social-item" key={item.id}>
-              <a href={item.url} target="_blank">
+              <a href={item.url} target="_blank" rel="noreferrer">
                 <div className="icon">{item.icon}</div>
                 <h4>{item.name}</h4>
               </a>
@@ -59,6 +76,9 @@ const Contact = () => {
                   id="name"
                   name="user_name"
                   placeholder="KevinOmega"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
                 />
               </div>
               <div className="form-item">
@@ -71,6 +91,9 @@ const Contact = () => {
                   id="email"
                   placeholder="something@gmail.com"
                   name="user_email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
                 />
               </div>
               <div className="form-item">
@@ -83,13 +106,23 @@ const Contact = () => {
                   placeholder="I want a web page for my business"
                   rows="3"
                   name="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
                 />
               </div>
-              <button className="primary-button" type="submit">
+              <button
+                className="primary-button"
+                type="submit"
+                disabled={btnDisabled}
+              >
                 Send
               </button>
             </div>
           </form>
+          <div className={`message ${showMessage && "active"} bg-success `}>
+            <p>Your message has been sent successfully</p>
+          </div>
         </div>
       </div>
     </footer>
